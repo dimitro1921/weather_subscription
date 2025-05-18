@@ -12,6 +12,7 @@ const transporter = nodemailer.createTransport({
 });
 
 exports.subscribe = async (req, res) => {
+  console.log('🧾 req.body:', req.body);
   const { email, city, frequency } = req.body;
 
   if (!email || !city || !frequency) {
