@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "migrate": "sequelize db:migrate"
+    "migrate": "sequelize db:migrate",
+    "test": "jest --runInBand"
   },
   "dependencies": {
     "axios": "^1.6.0",
