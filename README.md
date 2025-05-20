@@ -14,6 +14,27 @@ This project provides a simple weather forecast API that allows users to subscri
 
 ---
 
+## ⚙️ Environment Variables
+
+Before running the application, create a `.env` file in the root directory with the following content:
+
+```env
+PORT=3000
+API_KEY=your_weatherapi_com_key
+
+DB_NAME=weather_db
+DB_USER=postgres
+DB_PASS=postgres
+DB_HOST=db
+
+MAIL_USER=your_mailtrap_username
+MAIL_PASS=your_mailtrap_password
+```
+
+You can get a free API key for weather data from https://www.weatherapi.com.
+
+You can get SMTP credentials by signing up at https://mailtrap.io and copying the SMTP username and password from your inbox settings.
+
 ## 🚀 How to Run Locally (Docker)
 
 ```bash
